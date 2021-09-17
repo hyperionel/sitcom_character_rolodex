@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { render } from '@testing-library/react';
 
@@ -9,21 +8,14 @@ class App extends Component {
     super();
     
     this.state = {
-      characters: [
-        {
-          name: 'Sheldon Cooper',
-          id: 'a1'
-        },
-        {
-          name: 'John Dorian',
-          id: 'a2'
-        },
-        {
-          name: 'Pam Beesley',
-          id: 'a3'
-        }
-      ]
-    }
+      characters: []
+    };
+  }
+
+  componentDidMount() {
+    fetch('http://localhost:3001/sitcom_characters')
+    .then(response => response.json())
+    .then(users => this.setState({ characters: users }))
   }
   
   render() {

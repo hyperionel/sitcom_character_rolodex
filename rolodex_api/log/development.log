@@ -151,3 +151,126 @@ Processing by SitcomCharactersController#index as HTML
 Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 1.7ms | Allocations: 13096)
 
 
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:38:39 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.5ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 28ms (Views: 18.1ms | ActiveRecord: 1.2ms | Allocations: 14495)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:39:09 -0700
+Processing by SitcomCharactersController#index as HTML
+  [1m[36mSitcomCharacter Load (0.2ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.2ms | Allocations: 5324)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:39:13 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.7ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.7ms | Allocations: 5303)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:39:18 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.5ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.5ms | Allocations: 5289)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:52:41 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.2ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 37ms (Views: 27.6ms | ActiveRecord: 1.1ms | Allocations: 14514)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:54:16 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.3ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.3ms | Allocations: 5328)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:54:16 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.2ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.2ms | Allocations: 5290)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:54:17 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.2ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms | Allocations: 5304)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:55:07 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.3ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.3ms | Allocations: 5304)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:55:07 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.3ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.3ms | Allocations: 5290)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:55:20 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.2ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 5304)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:55:20 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.2ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.2ms | Allocations: 5290)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:56:03 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.3ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.3ms | Allocations: 5290)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:56:03 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.3ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.3ms | Allocations: 5290)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:56:07 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.3ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.3ms | Allocations: 5290)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:56:40 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.8ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.8ms | Allocations: 5290)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:56:40 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.2ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 5290)
+
+
