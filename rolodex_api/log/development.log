@@ -1,0 +1,153 @@
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SitcomCharacters (20210916115547)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210916115547"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-09-17 19:02:54.109745"], ["updated_at", "2021-09-17 19:02:54.109745"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SitcomCharacters (20210916115547)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "sitcom_characters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "address" text, "company" text, "name" varchar, "username" varchar, "email" varchar, "website" varchar, "phone" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210916115547"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-09-17 19:09:48.702663"], ["updated_at", "2021-09-17 19:09:48.702663"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ (pry):3:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ (pry):49:in `block (3 levels) in <main>'
+  [1m[36mSitcomCharacter Create (0.6ms)[0m  [1m[32mINSERT INTO "sitcom_characters" ("address", "company", "name", "username", "email", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "---\n:street: 4 Meadow Valley Pass\n:suite: 2 Golf Park\n:city: Sambava\n:zipcode: 52685-327\n:geo:\n  :lat: -14.2713338\n  :long: 50.1678121\n"], ["company", "---\n:name: Kare\n:catch_phrase: Fundamental asymmetric info-mediaries\n:bs: Integrated composite capability\n"], ["name", "Brigitta Kesper"], ["username", "bkesper0"], ["email", "bkesper0@google.co.jp"], ["website", "ocn.ne.jp"], ["phone", "674-519-9321"], ["created_at", "2021-09-17 19:25:26.068867"], ["updated_at", "2021-09-17 19:25:26.068867"]]
+  ↳ (pry):49:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ (pry):49:in `block (3 levels) in <main>'
+  [1m[36mSitcomCharacter Load (0.3ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mSitcomCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "sitcom_characters" ("address", "company", "name", "username", "email", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "---\n:street: 4 Meadow Valley Pass\n:suite: 2 Golf Park\n:city: Sambava\n:zipcode: 52685-327\n:geo:\n  :lat: -14.2713338\n  :long: 50.1678121\n"], ["company", "---\n:name: Kare\n:catch_phrase: Fundamental asymmetric info-mediaries\n:bs: Integrated composite capability\n"], ["name", "Brigitta Kesper"], ["username", "bkesper0"], ["email", "bkesper0@google.co.jp"], ["website", "ocn.ne.jp"], ["phone", "674-519-9321"], ["created_at", "2021-09-17 19:27:24.482390"], ["updated_at", "2021-09-17 19:27:24.482390"]]
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mSitcomCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "sitcom_characters" ("address", "company", "name", "username", "email", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "---\n:street: 6 Vera Center\n:suite: 7703 Mandrake Terrace\n:city: Ḩarīb\n:zipcode: '0009-5012'\n:geo:\n  :lat: 14.92653\n  :long: 45.507141\n"], ["company", "---\n:name: Edgewire\n:catch_phrase: Versatile mission-critical structure\n:bs: Cross-platform non-volatile success\n"], ["name", "Judie Tace"], ["username", "jtace1"], ["email", "jtace1@51.la"], ["website", "cbsnews.com"], ["phone", "702-754-5019"], ["created_at", "2021-09-17 19:27:24.498984"], ["updated_at", "2021-09-17 19:27:24.498984"]]
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mSitcomCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "sitcom_characters" ("address", "company", "name", "username", "email", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "---\n:street: 9351 Laurel Pass\n:suite: 49006 Arkansas Circle\n:city: Smoky Lake\n:zipcode: 0046-0872\n:geo:\n  :lat: 54.1100086\n  :long: -112.4800499\n"], ["company", "---\n:name: Wordify\n:catch_phrase: Focused tertiary function\n:bs: Open-architected non-volatile framework\n"], ["name", "Caty Eacott"], ["username", "ceacott2"], ["email", "ceacott2@printfriendly.com"], ["website", "statcounter.com"], ["phone", "396-433-6221"], ["created_at", "2021-09-17 19:27:24.506768"], ["updated_at", "2021-09-17 19:27:24.506768"]]
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mSitcomCharacter Create (0.5ms)[0m  [1m[32mINSERT INTO "sitcom_characters" ("address", "company", "name", "username", "email", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "---\n:street: 3336 Talmadge Terrace\n:suite: 283 Buell Circle\n:city: Vischongo\n:zipcode: 63629-4014\n:geo:\n  :lat: -13.589688\n  :long: -73.9962255\n"], ["company", "---\n:name: Fatz\n:catch_phrase: Cross-platform high-level hub\n:bs: Mandatory regional open system\n"], ["name", "Josy Corbridge"], ["username", "jcorbridge3"], ["email", "jcorbridge3@wired.com"], ["website", "furl.net"], ["phone", "773-645-7698"], ["created_at", "2021-09-17 19:27:24.513394"], ["updated_at", "2021-09-17 19:27:24.513394"]]
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mSitcomCharacter Create (0.5ms)[0m  [1m[32mINSERT INTO "sitcom_characters" ("address", "company", "name", "username", "email", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "---\n:street: 69 Karstens Drive\n:suite: 60 Corben Drive\n:city: Libertador General San Martín\n:zipcode: 47593-474\n:geo:\n  :lat: -34.6893836\n  :long: -58.5801516\n"], ["company", "---\n:name: Skilith\n:catch_phrase: Extended demand-driven focus group\n:bs: Fundamental stable secured line\n"], ["name", "Gerladina Cabera"], ["username", "gcabera4"], ["email", "gcabera4@webmd.com"], ["website", "oakley.com"], ["phone", "595-957-0309"], ["created_at", "2021-09-17 19:27:24.524642"], ["updated_at", "2021-09-17 19:27:24.524642"]]
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mSitcomCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "sitcom_characters" ("address", "company", "name", "username", "email", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "---\n:street: 4 Lawn Junction\n:suite: 208 Crownhardt Crossing\n:city: Capalayan\n:zipcode: 49371-017\n:geo:\n  :lat: 9.7441\n  :long: 125.535149\n"], ["company", "---\n:name: Roomm\n:catch_phrase: Fundamental maximized strategy\n:bs: Future-proofed solution-oriented orchestration\n"], ["name", "Nomi Titchener"], ["username", "ntitchener5"], ["email", "ntitchener5@mediafire.com"], ["website", "narod.ru"], ["phone", "808-340-7957"], ["created_at", "2021-09-17 19:27:24.531146"], ["updated_at", "2021-09-17 19:27:24.531146"]]
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mSitcomCharacter Create (0.5ms)[0m  [1m[32mINSERT INTO "sitcom_characters" ("address", "company", "name", "username", "email", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "---\n:street: 8 Stephen Avenue\n:suite: 78854 Arkansas Pass\n:city: Jarry\n:zipcode: 10742-8520\n:geo:\n  :lat: 16.2359\n  :long: -61.558\n"], ["company", "---\n:name: Yabox\n:catch_phrase: Profit-focused empowering software\n:bs: Progressive global data-warehouse\n"], ["name", "Benn Stolworthy"], ["username", "bstolworthy6"], ["email", "bstolworthy6@va.gov"], ["website", "latimes.com"], ["phone", "807-331-7482"], ["created_at", "2021-09-17 19:27:24.536686"], ["updated_at", "2021-09-17 19:27:24.536686"]]
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mSitcomCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "sitcom_characters" ("address", "company", "name", "username", "email", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "---\n:street: 92449 Rutledge Point\n:suite: 24 Amoth Court\n:city: Mukařov\n:zipcode: 60505-0402\n:geo:\n  :lat: 50.6471859\n  :long: 14.2963455\n"], ["company", "---\n:name: Myworks\n:catch_phrase: Multi-channelled empowering data-warehouse\n:bs: Profit-focused multi-tasking collaboration\n"], ["name", "Culver Iorizzi"], ["username", "ciorizzi7"], ["email", "ciorizzi7@lycos.com"], ["website", "cocolog-nifty.com"], ["phone", "448-290-6770"], ["created_at", "2021-09-17 19:27:24.542339"], ["updated_at", "2021-09-17 19:27:24.542339"]]
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mSitcomCharacter Create (0.5ms)[0m  [1m[32mINSERT INTO "sitcom_characters" ("address", "company", "name", "username", "email", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "---\n:street: 004 Mariners Cove Junction\n:suite: 41 Buena Vista Terrace\n:city: Pedro Leopoldo\n:zipcode: 57344-101\n:geo:\n  :lat: -19.6189005\n  :long: -44.0404979\n"], ["company", "---\n:name: Devify\n:catch_phrase: Customer-focused 24 hour attitude\n:bs: Re-engineered neutral database\n"], ["name", "Evaleen Willison"], ["username", "ewillison8"], ["email", "ewillison8@tripod.com"], ["website", "stumbleupon.com"], ["phone", "150-315-8184"], ["created_at", "2021-09-17 19:27:24.549169"], ["updated_at", "2021-09-17 19:27:24.549169"]]
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mSitcomCharacter Create (0.5ms)[0m  [1m[32mINSERT INTO "sitcom_characters" ("address", "company", "name", "username", "email", "website", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "---\n:street: 1138 Monica Junction\n:suite: 79618 Evergreen Drive\n:city: Changning\n:zipcode: 24385-405\n:geo:\n  :lat: 31.220367\n  :long: 121.424624\n"], ["company", "---\n:name: Bubblemix\n:catch_phrase: Re-contextualized eco-centric product\n:bs: Re-engineered attitude-oriented installation\n"], ["name", "Deeann Arch"], ["username", "darch9"], ["email", "darch9@zdnet.com"], ["website", "about.com"], ["phone", "145-892-3384"], ["created_at", "2021-09-17 19:27:24.554610"], ["updated_at", "2021-09-17 19:27:24.554610"]]
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/mock_data.rake:7:in `block (3 levels) in <main>'
+Started GET "/" for ::1 at 2021-09-17 12:30:34 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/bogdanungureanu/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/bogdanungureanu/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.7ms | Allocations: 530)
+Completed 200 OK in 33ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 4445)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-09-17 12:30:35 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:30:40 -0700
+  
+ActionController::RoutingError (uninitialized constant SitcomcharactersController
+Did you mean?  SitcomCharactersController):
+  
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:31:25 -0700
+Processing by SitcomCharactersController#index as HTML
+Completed 204 No Content in 37831ms (Allocations: 15022)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:32:05 -0700
+Processing by SitcomCharactersController#index as HTML
+Completed 500 Internal Server Error in 5ms (Allocations: 1825)
+
+
+  
+NameError (uninitialized constant SitcomCharactersController::SitcomCharacters):
+  
+app/controllers/sitcom_characters_controller.rb:3:in `index'
+Started GET "/sitcom_characters" for ::1 at 2021-09-17 12:32:13 -0700
+Processing by SitcomCharactersController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+  [1m[36mSitcomCharacter Load (0.2ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 1.7ms | Allocations: 13096)
+
+
