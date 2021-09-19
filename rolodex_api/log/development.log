@@ -274,3 +274,1038 @@ Processing by SitcomCharactersController#index as */*
 Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 5290)
 
 
+Started GET "/sitcom_characters" for ::1 at 2021-09-19 03:27:35 -0700
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (1.4ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 49ms (Views: 36.0ms | ActiveRecord: 2.5ms | Allocations: 14495)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-19 03:28:10 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.4ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.4ms | Allocations: 5328)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-19 03:39:44 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+  [1m[36mSitcomCharacter Load (0.2ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.6ms | Allocations: 5926)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-19 03:42:42 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.3ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.3ms | Allocations: 5304)
+
+
+Started GET "/character_images/1" for ::1 at 2021-09-19 04:25:57 -0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+NameError (uninitialized constant ImageGeneratorController::CharacterImageGenerator):
+  
+app/controllers/image_generator_controller.rb:2:in `<class:ImageGeneratorController>'
+app/controllers/image_generator_controller.rb:1:in `<main>'
+Started GET "/character_images/1" for ::1 at 2021-09-19 04:26:52 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 116612ms (Allocations: 21434)
+
+
+  
+NameError (uninitialized constant ImageGeneratorController::CharacterImageGenerator):
+  
+app/controllers/image_generator_controller.rb:4:in `generate'
+Started GET "/character_images/1" for ::1 at 2021-09-19 04:28:57 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 42868ms (ActiveRecord: 0.0ms | Allocations: 19632)
+
+
+  
+SyntaxError (/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:7: syntax error, unexpected string literal, expecting '}'
+    '5' => 'https://res.cloudinary...
+    ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:7: syntax error, unexpected ',', expecting `end'
+.../5fa451ea0c0a600020cc2f13.jpg',
+...                              ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:9: syntax error, unexpected ',', expecting `end'
+...5372e6a7067?s=fit&w=720&h=720',
+...                              ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:13: syntax error, unexpected '}', expecting `end'):
+  
+lib/character_image_generator.rb:7: syntax error, unexpected string literal, expecting '}'
+lib/character_image_generator.rb:7: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:9: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:13: syntax error, unexpected '}', expecting `end'
+lib/character_image_generator.rb:7: syntax error, unexpected string literal, expecting '}'
+lib/character_image_generator.rb:7: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:9: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:13: syntax error, unexpected '}', expecting `end'
+app/controllers/image_generator_controller.rb:4:in `generate'
+Started GET "/character_images/1" for ::1 at 2021-09-19 04:31:16 -0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 36353ms (ActiveRecord: 0.0ms | Allocations: 19688)
+
+
+  
+SyntaxError (/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:7: syntax error, unexpected string literal, expecting '}'
+    '5' => 'https://res.cloudinary...
+    ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:7: syntax error, unexpected ',', expecting `end'
+.../5fa451ea0c0a600020cc2f13.jpg',
+...                              ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:8: syntax error, unexpected ',', expecting `end'
+...91a131ba181f91fb258354bf7.jpg',
+...                              ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:9: syntax error, unexpected ',', expecting `end'
+...5372e6a7067?s=fit&w=720&h=720',
+...                              ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:10: syntax error, unexpected ',', expecting `end'
+...-scrubs-31805208-1024-768.jpg',
+...                              ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:11: syntax error, unexpected ',', expecting `end'
+...526144523_625x352-590x332.jpg',
+...                              ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:12: syntax error, unexpected ',', expecting `end'
+...sion/latest?cb=20081011190808',
+...                              ^
+):
+  
+lib/character_image_generator.rb:7: syntax error, unexpected string literal, expecting '}'
+lib/character_image_generator.rb:7: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:8: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:9: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:10: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:11: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:12: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:7: syntax error, unexpected string literal, expecting '}'
+lib/character_image_generator.rb:7: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:8: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:9: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:10: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:11: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:12: syntax error, unexpected ',', expecting `end'
+app/controllers/image_generator_controller.rb:4:in `generate'
+Started GET "/character_images/1" for ::1 at 2021-09-19 04:31:59 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"1"}
+Completed 204 No Content in 18530ms (ActiveRecord: 0.0ms | Allocations: 18082)
+
+
+Started GET "/character_images/1" for ::1 at 2021-09-19 04:32:28 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"1"}
+Completed 204 No Content in 509366ms (ActiveRecord: 0.0ms | Allocations: 63202)
+
+
+Started GET "/character_images/1" for ::1 at 2021-09-19 04:41:04 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 1480)
+
+
+  
+SyntaxError (/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:4: syntax error, unexpected string literal, expecting '}'
+    '1'       => 'https://static.w...
+    ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:4: syntax error, unexpected ',', expecting `end'
+.../height/360?cb=20200414162003',
+...                              ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:5: syntax error, unexpected ',', expecting `end'
+...sion/latest?cb=20170701084358',
+...                              ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:6: syntax error, unexpected ',', expecting `end'
+...-schrute/intro-1562620300.jpg',
+...                              ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:7: syntax error, unexpected ',', expecting `end'
+...sion/latest?cb=20190417120137',
+...                              ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:8: syntax error, unexpected ',', expecting `end'
+.../5fa451ea0c0a600020cc2f13.jpg',
+...                              ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:9: syntax error, unexpected ',', expecting `end'
+...91a131ba181f91fb258354bf7.jpg',
+...                              ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:10: syntax error, unexpected ',', expecting `end'
+...5372e6a7067?s=fit&w=720&h=720',
+...                              ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:11: syntax error, unexpected ',', expecting `end'
+...-scrubs-31805208-1024-768.jpg',
+...                              ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:12: syntax error, unexpected ',', expecting `end'
+...526144523_625x352-590x332.jpg',
+...                              ^
+/Users/bogdanungureanu/Desktop/Working/sitcom_character_rolodex/rolodex_api/lib/character_image_generator.rb:13: syntax error, unexpected ',', expecting `end'
+...sion/latest?cb=20081011190808',
+...                              ^
+):
+  
+lib/character_image_generator.rb:4: syntax error, unexpected string literal, expecting '}'
+lib/character_image_generator.rb:4: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:5: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:6: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:7: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:8: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:9: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:10: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:11: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:12: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:13: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:4: syntax error, unexpected string literal, expecting '}'
+lib/character_image_generator.rb:4: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:5: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:6: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:7: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:8: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:9: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:10: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:11: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:12: syntax error, unexpected ',', expecting `end'
+lib/character_image_generator.rb:13: syntax error, unexpected ',', expecting `end'
+app/controllers/image_generator_controller.rb:5:in `generate'
+Started GET "/character_images/1" for ::1 at 2021-09-19 04:41:33 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"1"}
+Completed 406 Not Acceptable in 18ms (ActiveRecord: 0.0ms | Allocations: 2282)
+
+
+  
+ActionController::MissingExactTemplate (ImageGeneratorController#generate is missing a template for request formats: text/html):
+  
+actionpack (6.1.4.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.4.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.4.1) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.4.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.4.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.4.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.4.0) lib/puma/configuration.rb:249:in `call'
+puma (5.4.0) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.4.0) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.4.0) lib/puma/request.rb:76:in `handle_request'
+puma (5.4.0) lib/puma/server.rb:440:in `process_client'
+puma (5.4.0) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/character_images/1" for ::1 at 2021-09-19 04:42:06 -0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"1"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 1.3ms | Allocations: 354)
+Completed 200 OK in 16ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 3513)
+
+
+Started GET "/character_images/1" for ::1 at 2021-09-19 04:42:55 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"1"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 0.1ms | Allocations: 13)
+Completed 200 OK in 3ms (Views: 0.9ms | Allocations: 782)
+
+
+Started GET "/character_images/1" for ::1 at 2021-09-19 04:43:05 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"1"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 1.2ms | Allocations: 354)
+Completed 200 OK in 10ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 3424)
+
+
+Started GET "/character_images/2" for ::1 at 2021-09-19 04:43:30 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"2"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/character_images/3" for ::1 at 2021-09-19 04:43:33 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"3"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 303)
+
+
+Started GET "/character_images/4" for ::1 at 2021-09-19 04:43:38 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"4"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 303)
+
+
+Started GET "/character_images/5" for ::1 at 2021-09-19 04:43:40 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"5"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started GET "/character_images/6" for ::1 at 2021-09-19 04:43:44 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"6"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 303)
+
+
+Started GET "/character_images/7" for ::1 at 2021-09-19 04:43:46 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"7"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 298)
+
+
+Started GET "/character_images/8" for ::1 at 2021-09-19 04:43:49 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"8"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started GET "/character_images/9" for ::1 at 2021-09-19 04:43:52 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"9"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started GET "/character_images/10" for ::1 at 2021-09-19 04:43:54 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"10"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started GET "/character_images/10" for ::1 at 2021-09-19 04:48:51 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"10"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 0.0ms | Allocations: 12)
+Completed 200 OK in 2ms (Views: 0.7ms | Allocations: 781)
+
+
+Started GET "/character_images/10" for ::1 at 2021-09-19 04:49:22 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"10"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 0.4ms | Allocations: 129)
+Completed 200 OK in 2ms (Views: 1.3ms | Allocations: 911)
+
+
+Started GET "/character_images/10" for ::1 at 2021-09-19 04:50:55 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"10"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 0.7ms | Allocations: 129)
+Completed 200 OK in 3ms (Views: 2.1ms | Allocations: 910)
+
+
+Started GET "/character_images/10" for ::1 at 2021-09-19 04:51:12 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"10"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 0.4ms | Allocations: 129)
+Completed 200 OK in 3ms (Views: 1.8ms | Allocations: 912)
+
+
+Started GET "/character_images/10" for ::1 at 2021-09-19 04:53:09 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"10"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 0.5ms | Allocations: 129)
+Completed 200 OK in 4ms (Views: 2.1ms | Allocations: 911)
+
+
+Started GET "/character_images/10" for ::1 at 2021-09-19 04:53:27 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"10"}
+  Rendering image_generator/generate.html.erb
+  Rendered image_generator/generate.html.erb (Duration: 0.4ms | Allocations: 129)
+Completed 200 OK in 2ms (Views: 1.3ms | Allocations: 910)
+
+
+Started GET "/character_images/10" for ::1 at 2021-09-19 04:56:33 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"10"}
+Completed 500 Internal Server Error in 1ms (Allocations: 311)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - http://images6.fanpop.com/image/photos/36400000/My-Name-is-Earl-image-my-name-is-earl-36403463-3072-2303.jpg):
+  
+app/controllers/image_generator_controller.rb:7:in `initialize'
+app/controllers/image_generator_controller.rb:7:in `open'
+app/controllers/image_generator_controller.rb:7:in `generate'
+Started GET "/character_images/10" for ::1 at 2021-09-19 04:59:35 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"10"}
+Redirected to http://images6.fanpop.com/image/photos/36400000/My-Name-is-Earl-image-my-name-is-earl-36403463-3072-2303.jpg
+Completed 302 Found in 1ms (Allocations: 309)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-19 05:03:19 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+  [1m[36mSitcomCharacter Load (0.4ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 34ms (Views: 29.5ms | ActiveRecord: 2.4ms | Allocations: 13160)
+
+
+Started GET "/character_images/1" for ::1 at 2021-09-19 05:03:20 -0700
+Started GET "/character_images/4" for ::1 at 2021-09-19 05:03:20 -0700
+Started GET "/character_images/3" for ::1 at 2021-09-19 05:03:20 -0700
+Started GET "/character_images/5" for ::1 at 2021-09-19 05:03:20 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/character_images/2" for ::1 at 2021-09-19 05:03:20 -0700
+Processing by ImageGeneratorController#generate as HTML
+Redirected to https://www.looper.com/img/gallery/the-best-time-jim-halpert-ever-broke-character-on-the-office/l-intro-1619889611.jpg
+  Parameters: {"id"=>"4"}
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 407)
+
+
+Processing by ImageGeneratorController#generate as HTML
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"5"}
+Redirected to https://res.cloudinary.com/jerrick/image/upload/v1604604394/5fa451ea0c0a600020cc2f13.jpg
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 149)
+
+
+Redirected to https://i.ndtvimg.com/i/2016-11/sheldon_640x480_41478610926.jpg
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 762)
+
+
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"2"}
+Redirected to https://devsari.com/wp-content/uploads/2020/11/Pam.jpg
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+  Parameters: {"id"=>"3"}
+Redirected to https://www.looper.com/img/gallery/the-untold-truth-of-dwight-schrute/intro-1562620300.jpg
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/character_images/7" for ::1 at 2021-09-19 05:03:20 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"7"}
+Redirected to https://img.wattpad.com/77a4073337cea65e86f80f85f5976e6c5ce0000b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f59614e456c6f33454b524f5655773d3d2d3831303539383132332e313564626337376636346433663731353939343738333338373835372e6a7067?s=fit&w=720&h=720
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 256)
+
+
+Started GET "/character_images/9" for ::1 at 2021-09-19 05:03:20 -0700
+Started GET "/character_images/8" for ::1 at 2021-09-19 05:03:20 -0700
+Started GET "/character_images/10" for ::1 at 2021-09-19 05:03:20 -0700
+Processing by ImageGeneratorController#generate as HTML
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"9"}
+Started GET "/character_images/11" for ::1 at 2021-09-19 05:03:20 -0700
+  Parameters: {"id"=>"8"}
+Redirected to https://tvseriesfinale.com/wp-content/uploads/2016/02/my-name-is-earl-20090526144523_625x352-590x332.jpg
+Redirected to https://jonnegroni.com/wp-content/uploads/2015/07/the-janitor-scrubs-31805208-1024-768.jpg
+Processing by ImageGeneratorController#generate as HTML
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 465)
+
+
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"10"}
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 383)
+
+
+  Parameters: {"id"=>"11"}
+Redirected to http://images6.fanpop.com/image/photos/36400000/My-Name-is-Earl-image-my-name-is-earl-36403463-3072-2303.jpg
+Redirected to https://media.gq.com/photos/5a3a84e592253b0ae57ef204/16:9/w_1280,c_limit/steve-carell.jpg
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 426)
+
+
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 333)
+
+
+Started GET "/character_images/6" for ::1 at 2021-09-19 05:03:20 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"6"}
+Redirected to https://i.pinimg.com/originals/c2/68/73/c26873991a131ba181f91fb258354bf7.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-19 05:04:49 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.2ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 5307)
+
+
+Started GET "/character_images/1" for ::1 at 2021-09-19 05:04:49 -0700
+Started GET "/character_images/2" for ::1 at 2021-09-19 05:04:49 -0700
+Started GET "/character_images/4" for ::1 at 2021-09-19 05:04:49 -0700
+Started GET "/character_images/5" for ::1 at 2021-09-19 05:04:49 -0700
+Started GET "/character_images/3" for ::1 at 2021-09-19 05:04:49 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"1"}
+Redirected to https://www.looper.com/img/gallery/the-best-time-jim-halpert-ever-broke-character-on-the-office/l-intro-1619889611.jpg
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"5"}
+Processing by ImageGeneratorController#generate as HTML
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 582)
+
+
+Processing by ImageGeneratorController#generate as HTML
+Redirected to https://res.cloudinary.com/jerrick/image/upload/v1604604394/5fa451ea0c0a600020cc2f13.jpg
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"3"}
+  Parameters: {"id"=>"2"}
+Redirected to https://www.looper.com/img/gallery/the-untold-truth-of-dwight-schrute/intro-1562620300.jpg
+  Parameters: {"id"=>"4"}
+Redirected to https://devsari.com/wp-content/uploads/2020/11/Pam.jpg
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 282)
+
+
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 237)
+
+
+Redirected to https://i.ndtvimg.com/i/2016-11/sheldon_640x480_41478610926.jpg
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 325)
+
+
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 501)
+
+
+Started GET "/character_images/7" for ::1 at 2021-09-19 05:04:50 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"7"}
+Redirected to https://img.wattpad.com/77a4073337cea65e86f80f85f5976e6c5ce0000b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f59614e456c6f33454b524f5655773d3d2d3831303539383132332e313564626337376636346433663731353939343738333338373835372e6a7067?s=fit&w=720&h=720
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 243)
+
+
+Started GET "/character_images/9" for ::1 at 2021-09-19 05:04:50 -0700
+Started GET "/character_images/8" for ::1 at 2021-09-19 05:04:50 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"9"}
+Redirected to https://tvseriesfinale.com/wp-content/uploads/2016/02/my-name-is-earl-20090526144523_625x352-590x332.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/character_images/10" for ::1 at 2021-09-19 05:04:50 -0700
+Started GET "/character_images/11" for ::1 at 2021-09-19 05:04:50 -0700
+Processing by ImageGeneratorController#generate as HTML
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"10"}
+Redirected to http://images6.fanpop.com/image/photos/36400000/My-Name-is-Earl-image-my-name-is-earl-36403463-3072-2303.jpg
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"8"}
+Redirected to https://jonnegroni.com/wp-content/uploads/2015/07/the-janitor-scrubs-31805208-1024-768.jpg
+  Parameters: {"id"=>"11"}
+Redirected to https://media.gq.com/photos/5a3a84e592253b0ae57ef204/16:9/w_1280,c_limit/steve-carell.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 355)
+
+
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/character_images/6" for ::1 at 2021-09-19 05:04:50 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"6"}
+Redirected to https://i.pinimg.com/originals/c2/68/73/c26873991a131ba181f91fb258354bf7.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-19 05:05:41 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.2ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.2ms | Allocations: 5290)
+
+
+Started GET "/character_images/3" for ::1 at 2021-09-19 05:05:41 -0700
+Started GET "/character_images/2" for ::1 at 2021-09-19 05:05:41 -0700
+Started GET "/character_images/1" for ::1 at 2021-09-19 05:05:41 -0700
+Processing by ImageGeneratorController#generate as HTML
+Started GET "/character_images/6" for ::1 at 2021-09-19 05:05:41 -0700
+  Parameters: {"id"=>"3"}
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"2"}
+Redirected to https://devsari.com/wp-content/uploads/2020/11/Pam.jpg
+Started GET "/character_images/4" for ::1 at 2021-09-19 05:05:41 -0700
+Processing by ImageGeneratorController#generate as HTML
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+  Parameters: {"id"=>"1"}
+Redirected to https://www.looper.com/img/gallery/the-best-time-jim-halpert-ever-broke-character-on-the-office/l-intro-1619889611.jpg
+Redirected to https://www.looper.com/img/gallery/the-untold-truth-of-dwight-schrute/intro-1562620300.jpg
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 355)
+
+
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms | Allocations: 884)
+
+
+Processing by ImageGeneratorController#generate as HTML
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"4"}
+  Parameters: {"id"=>"6"}
+Redirected to https://i.ndtvimg.com/i/2016-11/sheldon_640x480_41478610926.jpg
+Redirected to https://i.pinimg.com/originals/c2/68/73/c26873991a131ba181f91fb258354bf7.jpg
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 223)
+
+
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 174)
+
+
+Started GET "/character_images/7" for ::1 at 2021-09-19 05:05:42 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"7"}
+Redirected to https://img.wattpad.com/77a4073337cea65e86f80f85f5976e6c5ce0000b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f59614e456c6f33454b524f5655773d3d2d3831303539383132332e313564626337376636346433663731353939343738333338373835372e6a7067?s=fit&w=720&h=720
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/character_images/8" for ::1 at 2021-09-19 05:05:42 -0700
+Started GET "/character_images/9" for ::1 at 2021-09-19 05:05:42 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"8"}
+Redirected to https://jonnegroni.com/wp-content/uploads/2015/07/the-janitor-scrubs-31805208-1024-768.jpg
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/character_images/11" for ::1 at 2021-09-19 05:05:42 -0700
+Started GET "/character_images/10" for ::1 at 2021-09-19 05:05:42 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"10"}
+Redirected to http://images6.fanpop.com/image/photos/36400000/My-Name-is-Earl-image-my-name-is-earl-36403463-3072-2303.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"11"}
+Redirected to https://media.gq.com/photos/5a3a84e592253b0ae57ef204/16:9/w_1280,c_limit/steve-carell.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"9"}
+Redirected to https://tvseriesfinale.com/wp-content/uploads/2016/02/my-name-is-earl-20090526144523_625x352-590x332.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/character_images/5" for ::1 at 2021-09-19 05:05:42 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"5"}
+Redirected to https://res.cloudinary.com/jerrick/image/upload/v1604604394/5fa451ea0c0a600020cc2f13.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/character_images/5" for ::1 at 2021-09-19 05:06:03 -0700
+Started GET "/character_images/1" for ::1 at 2021-09-19 05:06:03 -0700
+Started GET "/character_images/2" for ::1 at 2021-09-19 05:06:03 -0700
+Started GET "/character_images/3" for ::1 at 2021-09-19 05:06:03 -0700
+Processing by ImageGeneratorController#generate as HTML
+Processing by ImageGeneratorController#generate as HTML
+Started GET "/character_images/4" for ::1 at 2021-09-19 05:06:03 -0700
+  Parameters: {"id"=>"5"}
+  Parameters: {"id"=>"1"}
+Processing by ImageGeneratorController#generate as HTML
+Processing by ImageGeneratorController#generate as HTML
+Redirected to https://www.looper.com/img/gallery/the-best-time-jim-halpert-ever-broke-character-on-the-office/l-intro-1619889611.jpg
+Processing by ImageGeneratorController#generate as HTML
+Redirected to https://res.cloudinary.com/jerrick/image/upload/v1604604394/5fa451ea0c0a600020cc2f13.jpg
+  Parameters: {"id"=>"2"}
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 553)
+
+
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 378)
+
+
+  Parameters: {"id"=>"3"}
+Redirected to https://www.looper.com/img/gallery/the-untold-truth-of-dwight-schrute/intro-1562620300.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+  Parameters: {"id"=>"4"}
+Redirected to https://devsari.com/wp-content/uploads/2020/11/Pam.jpg
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 938)
+
+
+Redirected to https://i.ndtvimg.com/i/2016-11/sheldon_640x480_41478610926.jpg
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 351)
+
+
+Started GET "/character_images/7" for ::1 at 2021-09-19 05:06:03 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"7"}
+Started GET "/character_images/8" for ::1 at 2021-09-19 05:06:03 -0700
+Started GET "/character_images/10" for ::1 at 2021-09-19 05:06:03 -0700
+Redirected to https://img.wattpad.com/77a4073337cea65e86f80f85f5976e6c5ce0000b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f59614e456c6f33454b524f5655773d3d2d3831303539383132332e313564626337376636346433663731353939343738333338373835372e6a7067?s=fit&w=720&h=720
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 568)
+
+
+Started GET "/character_images/11" for ::1 at 2021-09-19 05:06:03 -0700
+Processing by ImageGeneratorController#generate as HTML
+Started GET "/character_images/9" for ::1 at 2021-09-19 05:06:03 -0700
+  Parameters: {"id"=>"8"}
+Processing by ImageGeneratorController#generate as HTML
+Redirected to https://jonnegroni.com/wp-content/uploads/2015/07/the-janitor-scrubs-31805208-1024-768.jpg
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"10"}
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 602)
+
+
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"11"}
+Redirected to http://images6.fanpop.com/image/photos/36400000/My-Name-is-Earl-image-my-name-is-earl-36403463-3072-2303.jpg
+  Parameters: {"id"=>"9"}
+Redirected to https://tvseriesfinale.com/wp-content/uploads/2016/02/my-name-is-earl-20090526144523_625x352-590x332.jpg
+Redirected to https://media.gq.com/photos/5a3a84e592253b0ae57ef204/16:9/w_1280,c_limit/steve-carell.jpg
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 349)
+
+
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 405)
+
+
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 162)
+
+
+Started GET "/character_images/6" for ::1 at 2021-09-19 05:06:03 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"6"}
+Redirected to https://i.pinimg.com/originals/c2/68/73/c26873991a131ba181f91fb258354bf7.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-19 05:06:33 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.2ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 5302)
+
+
+Started GET "/character_images/1" for ::1 at 2021-09-19 05:06:33 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"1"}
+Redirected to https://www.looper.com/img/gallery/the-best-time-jim-halpert-ever-broke-character-on-the-office/l-intro-1619889611.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/character_images/2" for ::1 at 2021-09-19 05:06:33 -0700
+Started GET "/character_images/3" for ::1 at 2021-09-19 05:06:33 -0700
+Started GET "/character_images/6" for ::1 at 2021-09-19 05:06:33 -0700
+Started GET "/character_images/4" for ::1 at 2021-09-19 05:06:33 -0700
+Started GET "/character_images/5" for ::1 at 2021-09-19 05:06:33 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"3"}
+Redirected to https://www.looper.com/img/gallery/the-untold-truth-of-dwight-schrute/intro-1562620300.jpg
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Processing by ImageGeneratorController#generate as HTML
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"6"}
+Redirected to https://i.pinimg.com/originals/c2/68/73/c26873991a131ba181f91fb258354bf7.jpg
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"4"}
+  Parameters: {"id"=>"2"}
+Redirected to https://i.ndtvimg.com/i/2016-11/sheldon_640x480_41478610926.jpg
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 387)
+
+
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 120)
+
+
+Redirected to https://devsari.com/wp-content/uploads/2020/11/Pam.jpg
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 715)
+
+
+Processing by ImageGeneratorController#generate as HTML
+Started GET "/character_images/7" for ::1 at 2021-09-19 05:06:33 -0700
+  Parameters: {"id"=>"5"}
+Redirected to https://res.cloudinary.com/jerrick/image/upload/v1604604394/5fa451ea0c0a600020cc2f13.jpg
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 123)
+
+
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"7"}
+Redirected to https://img.wattpad.com/77a4073337cea65e86f80f85f5976e6c5ce0000b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f59614e456c6f33454b524f5655773d3d2d3831303539383132332e313564626337376636346433663731353939343738333338373835372e6a7067?s=fit&w=720&h=720
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 307)
+
+
+Started GET "/character_images/8" for ::1 at 2021-09-19 05:06:33 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"8"}
+Redirected to https://jonnegroni.com/wp-content/uploads/2015/07/the-janitor-scrubs-31805208-1024-768.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/character_images/9" for ::1 at 2021-09-19 05:06:33 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"9"}
+Redirected to https://tvseriesfinale.com/wp-content/uploads/2016/02/my-name-is-earl-20090526144523_625x352-590x332.jpg
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 343)
+
+
+Started GET "/character_images/10" for ::1 at 2021-09-19 05:06:33 -0700
+Started GET "/character_images/11" for ::1 at 2021-09-19 05:06:33 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"10"}
+Processing by ImageGeneratorController#generate as HTML
+Redirected to http://images6.fanpop.com/image/photos/36400000/My-Name-is-Earl-image-my-name-is-earl-36403463-3072-2303.jpg
+  Parameters: {"id"=>"11"}
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Redirected to https://media.gq.com/photos/5a3a84e592253b0ae57ef204/16:9/w_1280,c_limit/steve-carell.jpg
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 280)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-19 05:06:46 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.2ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.2ms | Allocations: 5302)
+
+
+Started GET "/character_images/1" for ::1 at 2021-09-19 05:06:46 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"1"}
+Redirected to https://www.looper.com/img/gallery/the-best-time-jim-halpert-ever-broke-character-on-the-office/l-intro-1619889611.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/character_images/2" for ::1 at 2021-09-19 05:06:46 -0700
+Started GET "/character_images/3" for ::1 at 2021-09-19 05:06:46 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"3"}
+Started GET "/character_images/5" for ::1 at 2021-09-19 05:06:46 -0700
+Started GET "/character_images/4" for ::1 at 2021-09-19 05:06:46 -0700
+Redirected to https://www.looper.com/img/gallery/the-untold-truth-of-dwight-schrute/intro-1562620300.jpg
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 399)
+
+
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"2"}
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"4"}
+Processing by ImageGeneratorController#generate as HTML
+Redirected to https://i.ndtvimg.com/i/2016-11/sheldon_640x480_41478610926.jpg
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 252)
+
+
+  Parameters: {"id"=>"5"}
+Redirected to https://res.cloudinary.com/jerrick/image/upload/v1604604394/5fa451ea0c0a600020cc2f13.jpg
+Redirected to https://devsari.com/wp-content/uploads/2020/11/Pam.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 523)
+
+
+Started GET "/character_images/7" for ::1 at 2021-09-19 05:06:46 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"7"}
+Redirected to https://img.wattpad.com/77a4073337cea65e86f80f85f5976e6c5ce0000b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f59614e456c6f33454b524f5655773d3d2d3831303539383132332e313564626337376636346433663731353939343738333338373835372e6a7067?s=fit&w=720&h=720
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/character_images/8" for ::1 at 2021-09-19 05:06:46 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"8"}
+Redirected to https://jonnegroni.com/wp-content/uploads/2015/07/the-janitor-scrubs-31805208-1024-768.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/character_images/9" for ::1 at 2021-09-19 05:06:46 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"9"}
+Redirected to https://tvseriesfinale.com/wp-content/uploads/2016/02/my-name-is-earl-20090526144523_625x352-590x332.jpg
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/character_images/10" for ::1 at 2021-09-19 05:06:46 -0700
+Started GET "/character_images/11" for ::1 at 2021-09-19 05:06:46 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"10"}
+Redirected to http://images6.fanpop.com/image/photos/36400000/My-Name-is-Earl-image-my-name-is-earl-36403463-3072-2303.jpg
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"11"}
+Redirected to https://media.gq.com/photos/5a3a84e592253b0ae57ef204/16:9/w_1280,c_limit/steve-carell.jpg
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/character_images/6" for ::1 at 2021-09-19 05:06:46 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"6"}
+Redirected to https://i.pinimg.com/originals/c2/68/73/c26873991a131ba181f91fb258354bf7.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/sitcom_characters" for ::1 at 2021-09-19 05:08:18 -0700
+Processing by SitcomCharactersController#index as */*
+  [1m[36mSitcomCharacter Load (0.1ms)[0m  [1m[34mSELECT "sitcom_characters".* FROM "sitcom_characters"[0m
+  ↳ app/controllers/sitcom_characters_controller.rb:3:in `index'
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.1ms | Allocations: 5290)
+
+
+Started GET "/character_images/4" for ::1 at 2021-09-19 05:08:19 -0700
+Started GET "/character_images/1" for ::1 at 2021-09-19 05:08:19 -0700
+Started GET "/character_images/2" for ::1 at 2021-09-19 05:08:19 -0700
+Started GET "/character_images/3" for ::1 at 2021-09-19 05:08:19 -0700
+Started GET "/character_images/5" for ::1 at 2021-09-19 05:08:19 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"4"}
+Redirected to https://i.ndtvimg.com/i/2016-11/sheldon_640x480_41478610926.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"1"}
+Redirected to https://www.looper.com/img/gallery/the-best-time-jim-halpert-ever-broke-character-on-the-office/l-intro-1619889611.jpg
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Processing by ImageGeneratorController#generate as HTML
+Processing by ImageGeneratorController#generate as HTML
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"5"}
+  Parameters: {"id"=>"2"}
+  Parameters: {"id"=>"3"}
+Redirected to https://res.cloudinary.com/jerrick/image/upload/v1604604394/5fa451ea0c0a600020cc2f13.jpg
+Redirected to https://devsari.com/wp-content/uploads/2020/11/Pam.jpg
+Redirected to https://www.looper.com/img/gallery/the-untold-truth-of-dwight-schrute/intro-1562620300.jpg
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 217)
+
+
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 273)
+
+
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 320)
+
+
+Started GET "/character_images/7" for ::1 at 2021-09-19 05:08:19 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"7"}
+Redirected to https://img.wattpad.com/77a4073337cea65e86f80f85f5976e6c5ce0000b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f59614e456c6f33454b524f5655773d3d2d3831303539383132332e313564626337376636346433663731353939343738333338373835372e6a7067?s=fit&w=720&h=720
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/character_images/8" for ::1 at 2021-09-19 05:08:19 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"8"}
+Redirected to https://jonnegroni.com/wp-content/uploads/2015/07/the-janitor-scrubs-31805208-1024-768.jpg
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+Started GET "/character_images/9" for ::1 at 2021-09-19 05:08:19 -0700
+Started GET "/character_images/10" for ::1 at 2021-09-19 05:08:19 -0700
+Started GET "/character_images/11" for ::1 at 2021-09-19 05:08:19 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"9"}
+Redirected to https://tvseriesfinale.com/wp-content/uploads/2016/02/my-name-is-earl-20090526144523_625x352-590x332.jpg
+Processing by ImageGeneratorController#generate as HTML
+Processing by ImageGeneratorController#generate as HTML
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 587)
+
+
+  Parameters: {"id"=>"10"}
+  Parameters: {"id"=>"11"}
+Redirected to http://images6.fanpop.com/image/photos/36400000/My-Name-is-Earl-image-my-name-is-earl-36403463-3072-2303.jpg
+Redirected to https://media.gq.com/photos/5a3a84e592253b0ae57ef204/16:9/w_1280,c_limit/steve-carell.jpg
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 220)
+
+
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 199)
+
+
+Started GET "/character_images/6" for ::1 at 2021-09-19 05:08:19 -0700
+Processing by ImageGeneratorController#generate as HTML
+  Parameters: {"id"=>"6"}
+Redirected to https://i.pinimg.com/originals/c2/68/73/c26873991a131ba181f91fb258354bf7.jpg
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
